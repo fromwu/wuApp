@@ -1,0 +1,47 @@
+<!doctype html>
+<html>
+ <head>
+  <meta charset="UTF-8">
+  <title>Login</title>
+  <style>
+
+  	
+  	.msg{margin: 20px 0px;background: #ccc;padding: 5px;}
+  	.msg .info{overflow: hidden;}
+  	.msg .user{float:left;color: blue;}
+  	.msg .time{float:right;color: #999;}
+  	.msg .content{width: 100%;}
+  	
+  </style>
+ </head>
+ <body>
+ 	<div>
+ 		<!--发表留言-->
+ 		<div>
+ 			<form action="saveMsg.php" method="post">
+ 				<fieldset>
+ 					<textarea name="content" cols='50' rows="5"></textarea>
+				 	<br>
+				 	<input name="user" type="text" />
+				 	<input type="submit" value="发表留言" /> 					
+ 				</fieldset> 				
+ 			</form> 			
+ 		</div>
+
+ 		<!--查看留言-->
+ 		<div class="msg">
+ 			<div class=info>
+ 				<span class="user">用户名</span>
+ 				<span class="time">2019-1-1 11:11:11</span>
+ 			</div>
+ 			<div class="content">
+ 				留言内容
+ 			</div>
+ 			
+ 		</div>
+ 	</div> 
+ </body>
+</html>
+
+
+
